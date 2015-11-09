@@ -1,0 +1,281 @@
+\hypertarget{classSensor}{\section{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+}
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+Inheritance diagram for Sensor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSensor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classSensor_a44bc63370538b343bcf1cf124f995a12}{Sensor} (double x, double y, double w, double l, double sp, double ori, \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} st, float c\mbox{[}3\mbox{]}, \hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435}{Sensor\-Type} sensort, \hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} ct)
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}{$\sim$\-Sensor} ()
+\begin{DoxyCompactList}\small\item\em Default deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classSensor_ae41bd5116afb0cc747540ddb365fa7c9}{set\-Sensor\-Type} (\hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435}{Sensor\-Type} new\-Sensor\-Type)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classSensor}{Sensor}'s Sensor\-Type through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classSensor_ace4a85e58bd2c50f862b3b92346ab662}{set\-Connection\-Type} (\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} newconnection\-Type)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classSensor}{Sensor}'s Connection\-Type through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classSensor_a3ec4aeec58a0568b4db754378f3f3875}{set\-Wheel\-I\-D} (\hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}{Wheel\-I\-D} new\-Wheel\-I\-D)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classSensor}{Sensor}'s wheel\-I\-D through arguement. \end{DoxyCompactList}\item 
+\hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435}{Sensor\-Type} \hyperlink{classSensor_aea7a13517a764fc70f77d5d0824cbd51}{get\-Sensor\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return sensor type of sensor. \end{DoxyCompactList}\item 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} \hyperlink{classSensor_ac998ec509e76c013abbbea3bc30db98b}{get\-Connection\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return connection type of sensor. \end{DoxyCompactList}\item 
+\hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}{Wheel\-I\-D} \hyperlink{classSensor_a44609d6da189a8116b5023b85f0dec12}{get\-Wheel\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em Return corresponding wheelid of sensor. \end{DoxyCompactList}\item 
+double \hyperlink{classSensor_a560a87babd7998b2b2c84f798dfb360e}{light\-Stimulation} (std\-::vector$<$ \hyperlink{classLight}{Light} $>$ lights)
+\begin{DoxyCompactList}\small\item\em Calculate overall impact of lights on the speed of corresponding wheel. \end{DoxyCompactList}\item 
+double \hyperlink{classSensor_a5797582193b7b896212622321efa5b40}{robot\-Stimulation} (std\-::vector$<$ \hyperlink{classRobotClass}{Robot\-Class} $>$ robots, int id)
+\begin{DoxyCompactList}\small\item\em Calculate overall impact of other robots on the speed of corresponding wheel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435}{Sensor\-Type} \hyperlink{classSensor_a69b674df6303a1007069aab4730807cd}{sensor\-Type}
+\item 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} \hyperlink{classSensor_a815bec85b7f50e297d71e3bced3a017d}{connection\-Type}
+\item 
+\hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}{Wheel\-I\-D} \hyperlink{classSensor_a6a88e3c8df6e481794380a3a0579bc34}{wheelid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection[{Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-::\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}
+
+
+The default constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classSensor_a44bc63370538b343bcf1cf124f995a12}{\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection[{Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-::\-Sensor (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{w, }
+\item[{double}]{l, }
+\item[{double}]{sp, }
+\item[{double}]{ori, }
+\item[{{\bf Shape\-Type}}]{st, }
+\item[{float}]{c\mbox{[}3\mbox{]}, }
+\item[{{\bf Sensor\-Type}}]{sensort, }
+\item[{{\bf Connection\-Type}}]{ct}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a44bc63370538b343bcf1cf124f995a12}
+
+
+A Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em y} & The y position of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em w} & The width of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em l} & The length of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em sp} & The speed of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em ori} & The orientation of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em st} & The Shape\-Type of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em c} & The color of \hyperlink{classSensor}{Sensor}. \\
+\hline
+{\em a\-R} & The action range of the \hyperlink{classSensor}{Sensor}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}{\index{Sensor@{Sensor}!$\sim$\-Sensor@{$\sim$\-Sensor}}
+\index{$\sim$\-Sensor@{$\sim$\-Sensor}!Sensor@{Sensor}}
+\subsubsection[{$\sim$\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-::$\sim$\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}
+
+
+Default deconstructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSensor_ac998ec509e76c013abbbea3bc30db98b}{\index{Sensor@{Sensor}!get\-Connection\-Type@{get\-Connection\-Type}}
+\index{get\-Connection\-Type@{get\-Connection\-Type}!Sensor@{Sensor}}
+\subsubsection[{get\-Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Type} Sensor\-::get\-Connection\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensor_ac998ec509e76c013abbbea3bc30db98b}
+
+
+Return connection type of sensor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classSensor_aea7a13517a764fc70f77d5d0824cbd51}{\index{Sensor@{Sensor}!get\-Sensor\-Type@{get\-Sensor\-Type}}
+\index{get\-Sensor\-Type@{get\-Sensor\-Type}!Sensor@{Sensor}}
+\subsubsection[{get\-Sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor\-Type} Sensor\-::get\-Sensor\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensor_aea7a13517a764fc70f77d5d0824cbd51}
+
+
+Return sensor type of sensor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classSensor_a44609d6da189a8116b5023b85f0dec12}{\index{Sensor@{Sensor}!get\-Wheel\-I\-D@{get\-Wheel\-I\-D}}
+\index{get\-Wheel\-I\-D@{get\-Wheel\-I\-D}!Sensor@{Sensor}}
+\subsubsection[{get\-Wheel\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel\-I\-D} Sensor\-::get\-Wheel\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a44609d6da189a8116b5023b85f0dec12}
+
+
+Return corresponding wheelid of sensor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classSensor_a560a87babd7998b2b2c84f798dfb360e}{\index{Sensor@{Sensor}!light\-Stimulation@{light\-Stimulation}}
+\index{light\-Stimulation@{light\-Stimulation}!Sensor@{Sensor}}
+\subsubsection[{light\-Stimulation}]{\setlength{\rightskip}{0pt plus 5cm}double Sensor\-::light\-Stimulation (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Light} $>$}]{lights}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a560a87babd7998b2b2c84f798dfb360e}
+
+
+Calculate overall impact of lights on the speed of corresponding wheel. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li and Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em lights} & The array of all the light in the environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSensor_a5797582193b7b896212622321efa5b40}{\index{Sensor@{Sensor}!robot\-Stimulation@{robot\-Stimulation}}
+\index{robot\-Stimulation@{robot\-Stimulation}!Sensor@{Sensor}}
+\subsubsection[{robot\-Stimulation}]{\setlength{\rightskip}{0pt plus 5cm}double Sensor\-::robot\-Stimulation (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Robot\-Class} $>$}]{robots, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a5797582193b7b896212622321efa5b40}
+
+
+Calculate overall impact of other robots on the speed of corresponding wheel. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li and Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em robots} & The array of all other robots in the environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSensor_ace4a85e58bd2c50f862b3b92346ab662}{\index{Sensor@{Sensor}!set\-Connection\-Type@{set\-Connection\-Type}}
+\index{set\-Connection\-Type@{set\-Connection\-Type}!Sensor@{Sensor}}
+\subsubsection[{set\-Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-::set\-Connection\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection\-Type}}]{newconnection\-Type}
+\end{DoxyParamCaption}
+)}}\label{classSensor_ace4a85e58bd2c50f862b3b92346ab662}
+
+
+set \hyperlink{classSensor}{Sensor}'s Connection\-Type through arguement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newconnection\-Type} & Set \hyperlink{classSensor}{Sensor}'s connection\-Type according to arguement newconnection\-Type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classSensor_ae41bd5116afb0cc747540ddb365fa7c9}{\index{Sensor@{Sensor}!set\-Sensor\-Type@{set\-Sensor\-Type}}
+\index{set\-Sensor\-Type@{set\-Sensor\-Type}!Sensor@{Sensor}}
+\subsubsection[{set\-Sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-::set\-Sensor\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensor\-Type}}]{new\-Sensor\-Type}
+\end{DoxyParamCaption}
+)}}\label{classSensor_ae41bd5116afb0cc747540ddb365fa7c9}
+
+
+set \hyperlink{classSensor}{Sensor}'s Sensor\-Type through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Sensor\-Type} & Set \hyperlink{classSensor}{Sensor}'s Sensortype according to arguement new\-Sensor\-Type. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSensor_a3ec4aeec58a0568b4db754378f3f3875}{\index{Sensor@{Sensor}!set\-Wheel\-I\-D@{set\-Wheel\-I\-D}}
+\index{set\-Wheel\-I\-D@{set\-Wheel\-I\-D}!Sensor@{Sensor}}
+\subsubsection[{set\-Wheel\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-::set\-Wheel\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Wheel\-I\-D}}]{new\-Wheel\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classSensor_a3ec4aeec58a0568b4db754378f3f3875}
+
+
+set \hyperlink{classSensor}{Sensor}'s wheel\-I\-D through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Wheel\-I\-D} & Set \hyperlink{classSensor}{Sensor}'s wheelid according to arguement new\-Wheel\-I\-D. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSensor_a815bec85b7f50e297d71e3bced3a017d}{\index{Sensor@{Sensor}!connection\-Type@{connection\-Type}}
+\index{connection\-Type@{connection\-Type}!Sensor@{Sensor}}
+\subsubsection[{connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Type} Sensor\-::connection\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classSensor_a815bec85b7f50e297d71e3bced3a017d}
+The type of connection with corresponding wheel \hypertarget{classSensor_a69b674df6303a1007069aab4730807cd}{\index{Sensor@{Sensor}!sensor\-Type@{sensor\-Type}}
+\index{sensor\-Type@{sensor\-Type}!Sensor@{Sensor}}
+\subsubsection[{sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor\-Type} Sensor\-::sensor\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classSensor_a69b674df6303a1007069aab4730807cd}
+The type of \hyperlink{classSensor}{Sensor} \hypertarget{classSensor_a6a88e3c8df6e481794380a3a0579bc34}{\index{Sensor@{Sensor}!wheelid@{wheelid}}
+\index{wheelid@{wheelid}!Sensor@{Sensor}}
+\subsubsection[{wheelid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel\-I\-D} Sensor\-::wheelid\hspace{0.3cm}{\ttfamily [private]}}}\label{classSensor_a6a88e3c8df6e481794380a3a0579bc34}
+The corresponding wheel 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensor_8h}{Sensor.\-h}\item 
+\hyperlink{Sensor_8cpp}{Sensor.\-cpp}\end{DoxyCompactItemize}

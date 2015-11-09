@@ -1,0 +1,178 @@
+\hypertarget{classEnvironmentClass}{\section{Environment\-Class Class Reference}
+\label{classEnvironmentClass}\index{Environment\-Class@{Environment\-Class}}
+}
+
+
+{\ttfamily \#include $<$Environment\-Class.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{Environment\-Class} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classEnvironmentClass_a48da88b6cf7894159825b9c869b2af9f}{Environment\-Class} (int area, int width, int height, std\-::vector$<$ \hyperlink{classObject}{Object} $>$ $\ast$objs)
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_afd86169390f7e3aadfb7b6438d220655}{update} (double elasped\-Time)
+\begin{DoxyCompactList}\small\item\em Update the orientation and positions of each object. \end{DoxyCompactList}\item 
+int \hyperlink{classEnvironmentClass_a77e1650c9944e5831760b4f9a9482580}{get\-Count} ()
+\begin{DoxyCompactList}\small\item\em This function returns the number of objects in the environment. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_ac4de88a208dfe69c635eb1aa1954fc60}{register\-Object} (\hyperlink{classObject}{Object} obj)
+\begin{DoxyCompactList}\small\item\em Objects register with the environment, which adds them to the environment data structure(s). \end{DoxyCompactList}\item 
+int \hyperlink{classEnvironmentClass_a401ac57c648ba38b9ff5e29699ae0e2a}{touch\-Sensor\-Reading} (\hyperlink{classObject}{Object} obj)
+\begin{DoxyCompactList}\small\item\em This function returns the information about distance and angles between each pair of robot and target. The infomation is returned in form of distance-\/direction vector. \end{DoxyCompactList}\item 
+\hyperlink{structNavigate}{Navigate} \hyperlink{classEnvironmentClass_a4535aab681606c4b67e790ec9b4484f9}{homing\-Sensor\-Reading} (\hyperlink{classObject}{Object} obj)
+\begin{DoxyCompactList}\small\item\em This function adjusts the orientation of a robot and make sure that the robots always move towards target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classObject}{Object} $>$ $\ast$ \hyperlink{classEnvironmentClass_a76496bf077c5d0a89a42ab752330e546}{objects}
+\item 
+int \hyperlink{classEnvironmentClass_afeb46604acaea75228549ed700f331a0}{Times\-Count}
+\item 
+int \hyperlink{classEnvironmentClass_a9a5b37410d83d107ab1b5d2912fc0a87}{count}
+\item 
+int \hyperlink{classEnvironmentClass_a62183824ee7d890044558c6c235bd86e}{size}
+\item 
+int \hyperlink{classEnvironmentClass_a48581ef606b9f769046d56553766bae6}{boundary} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{\index{Environment\-Class@{Environment\-Class}!Environment\-Class@{Environment\-Class}}
+\index{Environment\-Class@{Environment\-Class}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{Environment\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Environment\-Class\-::\-Environment\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}
+
+
+The default constructor. 
+
+\hypertarget{classEnvironmentClass_a48da88b6cf7894159825b9c869b2af9f}{\index{Environment\-Class@{Environment\-Class}!Environment\-Class@{Environment\-Class}}
+\index{Environment\-Class@{Environment\-Class}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{Environment\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Environment\-Class\-::\-Environment\-Class (
+\begin{DoxyParamCaption}
+\item[{int}]{area, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{std\-::vector$<$ {\bf Object} $>$ $\ast$}]{objs}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a48da88b6cf7894159825b9c869b2af9f}
+
+
+A Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & The size of environment. \\
+\hline
+{\em width} & The width of environment. \\
+\hline
+{\em height} & The height of environment. \\
+\hline
+{\em objs} & The vector array of objects. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEnvironmentClass_a77e1650c9944e5831760b4f9a9482580}{\index{Environment\-Class@{Environment\-Class}!get\-Count@{get\-Count}}
+\index{get\-Count@{get\-Count}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{get\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::get\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a77e1650c9944e5831760b4f9a9482580}
+
+
+This function returns the number of objects in the environment. 
+
+\hypertarget{classEnvironmentClass_a4535aab681606c4b67e790ec9b4484f9}{\index{Environment\-Class@{Environment\-Class}!homing\-Sensor\-Reading@{homing\-Sensor\-Reading}}
+\index{homing\-Sensor\-Reading@{homing\-Sensor\-Reading}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{homing\-Sensor\-Reading}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigate} Environment\-Class\-::homing\-Sensor\-Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Object}}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a4535aab681606c4b67e790ec9b4484f9}
+
+
+This function adjusts the orientation of a robot and make sure that the robots always move towards target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & pass in the object that we want to know information(distance and orientation) towards its target. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_ac4de88a208dfe69c635eb1aa1954fc60}{\index{Environment\-Class@{Environment\-Class}!register\-Object@{register\-Object}}
+\index{register\-Object@{register\-Object}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{register\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::register\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object}}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_ac4de88a208dfe69c635eb1aa1954fc60}
+
+
+Objects register with the environment, which adds them to the environment data structure(s). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object need to be registered to the environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a401ac57c648ba38b9ff5e29699ae0e2a}{\index{Environment\-Class@{Environment\-Class}!touch\-Sensor\-Reading@{touch\-Sensor\-Reading}}
+\index{touch\-Sensor\-Reading@{touch\-Sensor\-Reading}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{touch\-Sensor\-Reading}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::touch\-Sensor\-Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Object}}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a401ac57c648ba38b9ff5e29699ae0e2a}
+
+
+This function returns the information about distance and angles between each pair of robot and target. The infomation is returned in form of distance-\/direction vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the value for robot.\-touch sensor. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_afd86169390f7e3aadfb7b6438d220655}{\index{Environment\-Class@{Environment\-Class}!update@{update}}
+\index{update@{update}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::update (
+\begin{DoxyParamCaption}
+\item[{double}]{elasped\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_afd86169390f7e3aadfb7b6438d220655}
+
+
+Update the orientation and positions of each object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\-Time} & the time inteval between each updates \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEnvironmentClass_a48581ef606b9f769046d56553766bae6}{\index{Environment\-Class@{Environment\-Class}!boundary@{boundary}}
+\index{boundary@{boundary}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{boundary}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::boundary\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classEnvironmentClass_a48581ef606b9f769046d56553766bae6}
+boundary of environment \hypertarget{classEnvironmentClass_a9a5b37410d83d107ab1b5d2912fc0a87}{\index{Environment\-Class@{Environment\-Class}!count@{count}}
+\index{count@{count}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::count\hspace{0.3cm}{\ttfamily [private]}}}\label{classEnvironmentClass_a9a5b37410d83d107ab1b5d2912fc0a87}
+the number of objects \hypertarget{classEnvironmentClass_a76496bf077c5d0a89a42ab752330e546}{\index{Environment\-Class@{Environment\-Class}!objects@{objects}}
+\index{objects@{objects}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Object}$>$$\ast$ Environment\-Class\-::objects\hspace{0.3cm}{\ttfamily [private]}}}\label{classEnvironmentClass_a76496bf077c5d0a89a42ab752330e546}
+The object array \hypertarget{classEnvironmentClass_a62183824ee7d890044558c6c235bd86e}{\index{Environment\-Class@{Environment\-Class}!size@{size}}
+\index{size@{size}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classEnvironmentClass_a62183824ee7d890044558c6c235bd86e}
+size of environment \hypertarget{classEnvironmentClass_afeb46604acaea75228549ed700f331a0}{\index{Environment\-Class@{Environment\-Class}!Times\-Count@{Times\-Count}}
+\index{Times\-Count@{Times\-Count}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{Times\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::\-Times\-Count\hspace{0.3cm}{\ttfamily [private]}}}\label{classEnvironmentClass_afeb46604acaea75228549ed700f331a0}
+The number used for count how many times that update function been called 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{EnvironmentClass_8h}{Environment\-Class.\-h}\item 
+\hyperlink{EnvironmentClass_8cpp}{Environment\-Class.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{Sensor_8h}{\section{Sensor.\-h File Reference}
+\label{Sensor_8h}\index{Sensor.\-h@{Sensor.\-h}}
+}
+
+
+The representation of robot within the simulation.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include \char`\"{}Shape.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Light.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSensor}{Sensor}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435}{Sensor\-Type} \{ \hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435a997f3ebaad078224014cca7ce7095537}{Robot\-Sensor}, 
+\hyperlink{Sensor_8h_a213c434cb928c4ca22513e2302632435ad14f18d4e1c565acaa166edece9ba565}{Light\-Sensor}
+ \}
+\begin{DoxyCompactList}\small\item\em A light class contains attributes and hehaviors. \end{DoxyCompactList}\item 
+enum \hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} \{ \hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81faed960d16f6209c38ce7e3e79641468df}{Excitatorydirect}, 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fab0f5c078185d0cb83bafdda1c186d0fb}{Excitatorycrossed}, 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fabdd56a637ce0f5a8e28d5189ee6d0043}{Inhibitorydirect}, 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fa82a969f36cd506e97ea21d658356c35b}{Inhibitorycrossed}
+ \}
+\begin{DoxyCompactList}\small\item\em connection types between sensor and wheel \end{DoxyCompactList}\item 
+enum \hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}{Wheel\-I\-D} \{ \hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a0b7f0f6294e147e2e36d260241d4047b}{Left\-Wheel}, 
+\hyperlink{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a589ff6d02ae59889bc0d1ed9fbb91ebe}{Right\-Wheel}
+ \}
+\begin{DoxyCompactList}\small\item\em id for left and right wheel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The representation of robot within the simulation. \begin{DoxyAuthor}{Author}
+Group Meryl\-\_\-\-Streep 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 Mar 2015 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{\index{Sensor.\-h@{Sensor.\-h}!Connection\-Type@{Connection\-Type}}
+\index{Connection\-Type@{Connection\-Type}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Connection\-Type}}}\label{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}
+
+
+connection types between sensor and wheel 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Excitatorydirect@{Excitatorydirect}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Excitatorydirect@{Excitatorydirect}}\item[{\em 
+\hypertarget{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81faed960d16f6209c38ce7e3e79641468df}{Excitatorydirect}\label{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81faed960d16f6209c38ce7e3e79641468df}
+}]\index{Excitatorycrossed@{Excitatorycrossed}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Excitatorycrossed@{Excitatorycrossed}}\item[{\em 
+\hypertarget{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fab0f5c078185d0cb83bafdda1c186d0fb}{Excitatorycrossed}\label{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fab0f5c078185d0cb83bafdda1c186d0fb}
+}]\index{Inhibitorydirect@{Inhibitorydirect}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Inhibitorydirect@{Inhibitorydirect}}\item[{\em 
+\hypertarget{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fabdd56a637ce0f5a8e28d5189ee6d0043}{Inhibitorydirect}\label{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fabdd56a637ce0f5a8e28d5189ee6d0043}
+}]\index{Inhibitorycrossed@{Inhibitorycrossed}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Inhibitorycrossed@{Inhibitorycrossed}}\item[{\em 
+\hypertarget{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fa82a969f36cd506e97ea21d658356c35b}{Inhibitorycrossed}\label{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81fa82a969f36cd506e97ea21d658356c35b}
+}]\end{description}
+\end{Desc}
+\hypertarget{Sensor_8h_a213c434cb928c4ca22513e2302632435}{\index{Sensor.\-h@{Sensor.\-h}!Sensor\-Type@{Sensor\-Type}}
+\index{Sensor\-Type@{Sensor\-Type}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sensor\-Type}}}\label{Sensor_8h_a213c434cb928c4ca22513e2302632435}
+
+
+A light class contains attributes and hehaviors. 
+
+Inherit from \hyperlink{classShape}{Shape} class, add speed and orientation attributes. \hyperlink{classSensor}{Sensor} types for robots \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Robot\-Sensor@{Robot\-Sensor}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Robot\-Sensor@{Robot\-Sensor}}\item[{\em 
+\hypertarget{Sensor_8h_a213c434cb928c4ca22513e2302632435a997f3ebaad078224014cca7ce7095537}{Robot\-Sensor}\label{Sensor_8h_a213c434cb928c4ca22513e2302632435a997f3ebaad078224014cca7ce7095537}
+}]\index{Light\-Sensor@{Light\-Sensor}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Light\-Sensor@{Light\-Sensor}}\item[{\em 
+\hypertarget{Sensor_8h_a213c434cb928c4ca22513e2302632435ad14f18d4e1c565acaa166edece9ba565}{Light\-Sensor}\label{Sensor_8h_a213c434cb928c4ca22513e2302632435ad14f18d4e1c565acaa166edece9ba565}
+}]\end{description}
+\end{Desc}
+\hypertarget{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}{\index{Sensor.\-h@{Sensor.\-h}!Wheel\-I\-D@{Wheel\-I\-D}}
+\index{Wheel\-I\-D@{Wheel\-I\-D}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Wheel\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Wheel\-I\-D}}}\label{Sensor_8h_a231524b302f9d7e6dd216fa89296f844}
+
+
+id for left and right wheel. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Left\-Wheel@{Left\-Wheel}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Left\-Wheel@{Left\-Wheel}}\item[{\em 
+\hypertarget{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a0b7f0f6294e147e2e36d260241d4047b}{Left\-Wheel}\label{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a0b7f0f6294e147e2e36d260241d4047b}
+}]\index{Right\-Wheel@{Right\-Wheel}!Sensor.\-h@{Sensor.\-h}}\index{Sensor.\-h@{Sensor.\-h}!Right\-Wheel@{Right\-Wheel}}\item[{\em 
+\hypertarget{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a589ff6d02ae59889bc0d1ed9fbb91ebe}{Right\-Wheel}\label{Sensor_8h_a231524b302f9d7e6dd216fa89296f844a589ff6d02ae59889bc0d1ed9fbb91ebe}
+}]\end{description}
+\end{Desc}

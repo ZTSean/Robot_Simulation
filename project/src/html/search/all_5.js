@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['getactionrange',['getActionRange',['../classLight.html#afe69e219ba4af853ad17408b50147cfe',1,'Light::getActionRange()'],['../classRobotClass.html#a37170c1d224daa872fb4a506719bb43f',1,'RobotClass::getActionRange()']]],
+  ['getcolor',['getColor',['../classShape.html#ab27ec7349bf8707b5f1ff4031af0923e',1,'Shape']]],
+  ['getconnectiontype',['getConnectionType',['../classRobotClass.html#ad1f430d26cf7265285db0742a0fd6f34',1,'RobotClass::getConnectionType()'],['../classSensor.html#ac998ec509e76c013abbbea3bc30db98b',1,'Sensor::getConnectionType()']]],
+  ['getcount',['getCount',['../classEnvironmentClass.html#a77e1650c9944e5831760b4f9a9482580',1,'EnvironmentClass']]],
+  ['getid',['getID',['../classRobotClass.html#a6b817a39e292edf591c65a68a31a3012',1,'RobotClass']]],
+  ['getleftspeed',['getLeftSpeed',['../classRobotClass.html#aa37142a222c6b2fc1f877d395f0b371d',1,'RobotClass']]],
+  ['getleftwheelx',['getLeftWheelX',['../classRobotClass.html#a3fc92ded2588d8e880be8301fe7e78ca',1,'RobotClass']]],
+  ['getleftwheely',['getLeftWheelY',['../classRobotClass.html#ab6d7104d418020f8a1d7254700eead0e',1,'RobotClass']]],
+  ['getlength',['getLength',['../classShape.html#a89fea1a4257a592f4a94626df49af6be',1,'Shape']]],
+  ['getorientation',['getOrientation',['../classShape.html#a0b50a459fa51ff3ae311fc09194966e6',1,'Shape']]],
+  ['getrightspeed',['getRightSpeed',['../classRobotClass.html#ab414f4d538c9ba99c32c0297ac8ca189',1,'RobotClass']]],
+  ['getrightwheelx',['getRightWheelX',['../classRobotClass.html#a5d32eb96cbb3bfe01b956f09e35b925c',1,'RobotClass']]],
+  ['getrightwheely',['getRightWheelY',['../classRobotClass.html#abc35edf633f6b03a0956e2bdb68a127c',1,'RobotClass']]],
+  ['getsensortype',['getSensorType',['../classSensor.html#aea7a13517a764fc70f77d5d0824cbd51',1,'Sensor']]],
+  ['getshapetype',['getShapeType',['../classShape.html#a2ac50956512eba17938466857ba8a069',1,'Shape']]],
+  ['getspeed',['getSpeed',['../classShape.html#a5d515965a741032ee2d9ffad45d99f88',1,'Shape']]],
+  ['getwheelid',['getWheelID',['../classSensor.html#a44609d6da189a8116b5023b85f0dec12',1,'Sensor']]],
+  ['getwidth',['getWidth',['../classShape.html#a512f68cc25140a761d0daaca7e49dc42',1,'Shape']]],
+  ['getxposition',['getXPosition',['../classShape.html#aa318a705f1462eec42c72a1581175cea',1,'Shape']]],
+  ['getyposition',['getYPosition',['../classShape.html#a4abaab3fb5f7dd9ec5d370077c8a460d',1,'Shape']]],
+  ['glui',['glui',['../classBaseGfxApp.html#ac721a0fedce80308c5c0e5695016e95d',1,'BaseGfxApp']]],
+  ['gluicontrol',['gluiControl',['../classBaseGfxApp.html#a2978a7c358794c67df73b66776b2cef3',1,'BaseGfxApp::gluiControl()'],['../classSimulation.html#a1607cd18e552ab9f4a6f57d362f7121a',1,'Simulation::gluiControl()']]]
+];

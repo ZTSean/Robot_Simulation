@@ -1,0 +1,455 @@
+\hypertarget{classShape}{\section{Shape Class Reference}
+\label{classShape}\index{Shape@{Shape}}
+}
+
+
+Super Class of \hyperlink{classRobotClass}{Robot\-Class}, Target and Obstacle, contains position x, y, width and length.  
+
+
+
+
+{\ttfamily \#include $<$Shape.\-h$>$}
+
+Inheritance diagram for Shape\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classShape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classShape_a0321daab69934d93bdbfa0043aa93d6f}{Shape} (double x, double y, double w, double l, double sp, double ori, \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} st, float c\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classShape_a935afc9e576015f967d90de56977167d}{$\sim$\-Shape} ()
+\begin{DoxyCompactList}\small\item\em The default deconstructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classShape_a341d3d37dc6612007affe1b397b689a7}{set\-Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classShape}{Shape}'s Position through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classShape_a3cff2a1f2501873af1c777bf120b9c9a}{set\-Width} (double w)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classShape}{Shape}'s width through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classShape_ae6391c6b6ed068c3f5a30ed15ffd5903}{set\-Length} (double l)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classShape}{Shape}'s length through arguement. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classShape_a23976c8158461838dcbba68b118c9580}{set\-Speed} (double pps)
+\begin{DoxyCompactList}\small\item\em set object's speed through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classShape_a51e0ae3cdae9992986711bf9e4de5821}{set\-Orientation} (double degrees)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classShape}{Shape}'s orientation through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classShape_a610d97f732d655186a3cafa63b6f19fb}{set\-Shape} (\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} shape)
+\begin{DoxyCompactList}\small\item\em Set S\-Hape's shape through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classShape_ae2f26cc38bb9b4018de216f63bf33f03}{set\-Color} (float c\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classShape}{Shape}'s color through arguements. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_aa318a705f1462eec42c72a1581175cea}{get\-X\-Position} ()
+\begin{DoxyCompactList}\small\item\em Return current x position of \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a4abaab3fb5f7dd9ec5d370077c8a460d}{get\-Y\-Position} ()
+\begin{DoxyCompactList}\small\item\em Return current y position of \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a512f68cc25140a761d0daaca7e49dc42}{get\-Width} ()
+\begin{DoxyCompactList}\small\item\em Return current width of \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a89fea1a4257a592f4a94626df49af6be}{get\-Length} ()
+\begin{DoxyCompactList}\small\item\em Return current length of \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a5d515965a741032ee2d9ffad45d99f88}{get\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Return current speed of object. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a0b50a459fa51ff3ae311fc09194966e6}{get\-Orientation} ()
+\begin{DoxyCompactList}\small\item\em Return current orientation of object. \end{DoxyCompactList}\item 
+\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \hyperlink{classShape_a2ac50956512eba17938466857ba8a069}{get\-Shape\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return Object's shape through arguements. \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classShape_ab27ec7349bf8707b5f1ff4031af0923e}{get\-Color} ()
+\begin{DoxyCompactList}\small\item\em Get Object's color through arguements. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a716868f38999597e67b1d1ceaf4e0876}{regular\-\_\-\-Ori} (double d)
+\begin{DoxyCompactList}\small\item\em Regulate input degree to make it range from 0 -\/ 360. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \hyperlink{classShape_a18af04fdf7a9e121518f3c7278693c60}{shape\-Type}
+\item 
+int \hyperlink{classShape_a24a25c3d22ee7e05d0439f765f247125}{I\-D}
+\item 
+double \hyperlink{classShape_a018c8854f87fe06796659eb96bf588bc}{width}
+\item 
+double \hyperlink{classShape_ac63ea3d2c8a8ad0481ec5f6cb9b5dbfc}{length}
+\item 
+double \hyperlink{classShape_ae07fa065912725b9382c9b58dcaa3a2c}{pos\-\_\-x}
+\item 
+double \hyperlink{classShape_aa7c6ae5806f6fba2a108e9e04fa98545}{pos\-\_\-y}
+\item 
+double \hyperlink{classShape_ad426ffc5fe63007bf8dedce3881725a6}{speed}
+\item 
+double \hyperlink{classShape_a0bbdd420c8befa0a9c5fc95954205e9d}{orientation}
+\item 
+float \hyperlink{classShape_a9f925188936af909e796807fc75c1501}{color} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Super Class of \hyperlink{classRobotClass}{Robot\-Class}, Target and Obstacle, contains position x, y, width and length. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection[{Shape}]{\setlength{\rightskip}{0pt plus 5cm}Shape\-::\-Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_aaa8d87171e65e0d8ba3c5459978992a7}
+
+
+The default constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a0321daab69934d93bdbfa0043aa93d6f}{\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection[{Shape}]{\setlength{\rightskip}{0pt plus 5cm}Shape\-::\-Shape (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{w, }
+\item[{double}]{l, }
+\item[{double}]{sp, }
+\item[{double}]{ori, }
+\item[{{\bf Shape\-Type}}]{st, }
+\item[{float}]{c\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classShape_a0321daab69934d93bdbfa0043aa93d6f}
+
+
+A Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em y} & The y position of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em w} & The width of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em l} & The length of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em sp} & The speed of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em ori} & The orientation of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em st} & The Shape\-Type of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em c} & The color of \hyperlink{classShape}{Shape}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a935afc9e576015f967d90de56977167d}{\index{Shape@{Shape}!$\sim$\-Shape@{$\sim$\-Shape}}
+\index{$\sim$\-Shape@{$\sim$\-Shape}!Shape@{Shape}}
+\subsubsection[{$\sim$\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}Shape\-::$\sim$\-Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a935afc9e576015f967d90de56977167d}
+
+
+The default deconstructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classShape_ab27ec7349bf8707b5f1ff4031af0923e}{\index{Shape@{Shape}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!Shape@{Shape}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ Shape\-::get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_ab27ec7349bf8707b5f1ff4031af0923e}
+
+
+Get Object's color through arguements. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a89fea1a4257a592f4a94626df49af6be}{\index{Shape@{Shape}!get\-Length@{get\-Length}}
+\index{get\-Length@{get\-Length}!Shape@{Shape}}
+\subsubsection[{get\-Length}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a89fea1a4257a592f4a94626df49af6be}
+
+
+Return current length of \hyperlink{classShape}{Shape}. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a0b50a459fa51ff3ae311fc09194966e6}{\index{Shape@{Shape}!get\-Orientation@{get\-Orientation}}
+\index{get\-Orientation@{get\-Orientation}!Shape@{Shape}}
+\subsubsection[{get\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a0b50a459fa51ff3ae311fc09194966e6}
+
+
+Return current orientation of object. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a2ac50956512eba17938466857ba8a069}{\index{Shape@{Shape}!get\-Shape\-Type@{get\-Shape\-Type}}
+\index{get\-Shape\-Type@{get\-Shape\-Type}!Shape@{Shape}}
+\subsubsection[{get\-Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\-Type} Shape\-::get\-Shape\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a2ac50956512eba17938466857ba8a069}
+
+
+Return Object's shape through arguements. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a5d515965a741032ee2d9ffad45d99f88}{\index{Shape@{Shape}!get\-Speed@{get\-Speed}}
+\index{get\-Speed@{get\-Speed}!Shape@{Shape}}
+\subsubsection[{get\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a5d515965a741032ee2d9ffad45d99f88}
+
+
+Return current speed of object. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a512f68cc25140a761d0daaca7e49dc42}{\index{Shape@{Shape}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Shape@{Shape}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a512f68cc25140a761d0daaca7e49dc42}
+
+
+Return current width of \hyperlink{classShape}{Shape}. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_aa318a705f1462eec42c72a1581175cea}{\index{Shape@{Shape}!get\-X\-Position@{get\-X\-Position}}
+\index{get\-X\-Position@{get\-X\-Position}!Shape@{Shape}}
+\subsubsection[{get\-X\-Position}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-X\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_aa318a705f1462eec42c72a1581175cea}
+
+
+Return current x position of \hyperlink{classShape}{Shape}. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a4abaab3fb5f7dd9ec5d370077c8a460d}{\index{Shape@{Shape}!get\-Y\-Position@{get\-Y\-Position}}
+\index{get\-Y\-Position@{get\-Y\-Position}!Shape@{Shape}}
+\subsubsection[{get\-Y\-Position}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::get\-Y\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classShape_a4abaab3fb5f7dd9ec5d370077c8a460d}
+
+
+Return current y position of \hyperlink{classShape}{Shape}. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_a716868f38999597e67b1d1ceaf4e0876}{\index{Shape@{Shape}!regular\-\_\-\-Ori@{regular\-\_\-\-Ori}}
+\index{regular\-\_\-\-Ori@{regular\-\_\-\-Ori}!Shape@{Shape}}
+\subsubsection[{regular\-\_\-\-Ori}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::regular\-\_\-\-Ori (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{classShape_a716868f38999597e67b1d1ceaf4e0876}
+
+
+Regulate input degree to make it range from 0 -\/ 360. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classShape_ae2f26cc38bb9b4018de216f63bf33f03}{\index{Shape@{Shape}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!Shape@{Shape}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{float}]{c\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classShape_ae2f26cc38bb9b4018de216f63bf33f03}
+
+
+Set \hyperlink{classShape}{Shape}'s color through arguements. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em c\mbox{[}$\,$\mbox{]}} & Set \hyperlink{classShape}{Shape}'s color according to the array passed in. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_ae6391c6b6ed068c3f5a30ed15ffd5903}{\index{Shape@{Shape}!set\-Length@{set\-Length}}
+\index{set\-Length@{set\-Length}!Shape@{Shape}}
+\subsubsection[{set\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Length (
+\begin{DoxyParamCaption}
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}}\label{classShape_ae6391c6b6ed068c3f5a30ed15ffd5903}
+
+
+set \hyperlink{classShape}{Shape}'s length through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Set \hyperlink{classShape}{Shape}'s length according to arguement double l. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a51e0ae3cdae9992986711bf9e4de5821}{\index{Shape@{Shape}!set\-Orientation@{set\-Orientation}}
+\index{set\-Orientation@{set\-Orientation}!Shape@{Shape}}
+\subsubsection[{set\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Orientation (
+\begin{DoxyParamCaption}
+\item[{double}]{degrees}
+\end{DoxyParamCaption}
+)}}\label{classShape_a51e0ae3cdae9992986711bf9e4de5821}
+
+
+Set \hyperlink{classShape}{Shape}'s orientation through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & Set \hyperlink{classShape}{Shape}'s orientation according to arguement integer degrees. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a341d3d37dc6612007affe1b397b689a7}{\index{Shape@{Shape}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Shape@{Shape}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classShape_a341d3d37dc6612007affe1b397b689a7}
+
+
+Set \hyperlink{classShape}{Shape}'s Position through arguements. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Set \hyperlink{classShape}{Shape}'s position according to arguement double x. \\
+\hline
+{\em y} & Set \hyperlink{classShape}{Shape}'s position according to arguement double y. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a610d97f732d655186a3cafa63b6f19fb}{\index{Shape@{Shape}!set\-Shape@{set\-Shape}}
+\index{set\-Shape@{set\-Shape}!Shape@{Shape}}
+\subsubsection[{set\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape\-Type}}]{shape}
+\end{DoxyParamCaption}
+)}}\label{classShape_a610d97f732d655186a3cafa63b6f19fb}
+
+
+Set S\-Hape's shape through arguements. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & Set \hyperlink{classShape}{Shape}'s shape according to the shape passed in. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a23976c8158461838dcbba68b118c9580}{\index{Shape@{Shape}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!Shape@{Shape}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{pps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classShape_a23976c8158461838dcbba68b118c9580}
+
+
+set object's speed through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em pps} & Set object's speed according to arguement integer pps. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classShape_a3cff2a1f2501873af1c777bf120b9c9a}{\index{Shape@{Shape}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!Shape@{Shape}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{double}]{w}
+\end{DoxyParamCaption}
+)}}\label{classShape_a3cff2a1f2501873af1c777bf120b9c9a}
+
+
+set \hyperlink{classShape}{Shape}'s width through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Set \hyperlink{classShape}{Shape}'s width according to arguement double w. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classShape_a9f925188936af909e796807fc75c1501}{\index{Shape@{Shape}!color@{color}}
+\index{color@{color}!Shape@{Shape}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}float Shape\-::color\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_a9f925188936af909e796807fc75c1501}
+color of shape \hypertarget{classShape_a24a25c3d22ee7e05d0439f765f247125}{\index{Shape@{Shape}!I\-D@{I\-D}}
+\index{I\-D@{I\-D}!Shape@{Shape}}
+\subsubsection[{I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\-::\-I\-D\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_a24a25c3d22ee7e05d0439f765f247125}
+\hypertarget{classShape_ac63ea3d2c8a8ad0481ec5f6cb9b5dbfc}{\index{Shape@{Shape}!length@{length}}
+\index{length@{length}!Shape@{Shape}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::length\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_ac63ea3d2c8a8ad0481ec5f6cb9b5dbfc}
+length of shape \hypertarget{classShape_a0bbdd420c8befa0a9c5fc95954205e9d}{\index{Shape@{Shape}!orientation@{orientation}}
+\index{orientation@{orientation}!Shape@{Shape}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::orientation\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_a0bbdd420c8befa0a9c5fc95954205e9d}
+direction of shape \hypertarget{classShape_ae07fa065912725b9382c9b58dcaa3a2c}{\index{Shape@{Shape}!pos\-\_\-x@{pos\-\_\-x}}
+\index{pos\-\_\-x@{pos\-\_\-x}!Shape@{Shape}}
+\subsubsection[{pos\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::pos\-\_\-x\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_ae07fa065912725b9382c9b58dcaa3a2c}
+x position of shape \hypertarget{classShape_aa7c6ae5806f6fba2a108e9e04fa98545}{\index{Shape@{Shape}!pos\-\_\-y@{pos\-\_\-y}}
+\index{pos\-\_\-y@{pos\-\_\-y}!Shape@{Shape}}
+\subsubsection[{pos\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::pos\-\_\-y\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_aa7c6ae5806f6fba2a108e9e04fa98545}
+y position of shape \hypertarget{classShape_a18af04fdf7a9e121518f3c7278693c60}{\index{Shape@{Shape}!shape\-Type@{shape\-Type}}
+\index{shape\-Type@{shape\-Type}!Shape@{Shape}}
+\subsubsection[{shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\-Type} Shape\-::shape\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_a18af04fdf7a9e121518f3c7278693c60}
+\hypertarget{classShape_ad426ffc5fe63007bf8dedce3881725a6}{\index{Shape@{Shape}!speed@{speed}}
+\index{speed@{speed}!Shape@{Shape}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::speed\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_ad426ffc5fe63007bf8dedce3881725a6}
+speed of shape \hypertarget{classShape_a018c8854f87fe06796659eb96bf588bc}{\index{Shape@{Shape}!width@{width}}
+\index{width@{width}!Shape@{Shape}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classShape_a018c8854f87fe06796659eb96bf588bc}
+width of shape 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Shape_8h}{Shape.\-h}\item 
+\hyperlink{Shape_8cpp}{Shape.\-cpp}\end{DoxyCompactItemize}

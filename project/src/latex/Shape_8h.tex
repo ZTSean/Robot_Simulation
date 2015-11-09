@@ -1,0 +1,80 @@
+\hypertarget{Shape_8h}{\section{Shape.\-h File Reference}
+\label{Shape_8h}\index{Shape.\-h@{Shape.\-h}}
+}
+
+
+The Super Class.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classShape}{Shape}
+\begin{DoxyCompactList}\small\item\em Super Class of \hyperlink{classRobotClass}{Robot\-Class}, Target and Obstacle, contains position x, y, width and length. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \{ \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}{Circle}, 
+\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}{Triangle}, 
+\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad614565f121617f9b952559339bffcf6}{Rectangle}, 
+\hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}{Quad}
+ \}
+\item 
+enum \hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \{ \\*
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}{None}, 
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}{Top}, 
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}{Bottom}, 
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}, 
+\\*
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}{Right}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Super Class. \begin{DoxyAuthor}{Author}
+Group Meryl\-\_\-\-Streep 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+8 April 2015 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{\index{Shape.\-h@{Shape.\-h}!Shape\-Type@{Shape\-Type}}
+\index{Shape\-Type@{Shape\-Type}!Shape.h@{Shape.\-h}}
+\subsubsection[{Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Shape\-Type}}}\label{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Circle@{Circle}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Circle@{Circle}}\item[{\em 
+\hypertarget{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}{Circle}\label{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}
+}]\hyperlink{classShape}{Shape} type of Object \index{Triangle@{Triangle}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Triangle@{Triangle}}\item[{\em 
+\hypertarget{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}{Triangle}\label{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}
+}]\index{Rectangle@{Rectangle}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Rectangle@{Rectangle}}\item[{\em 
+\hypertarget{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad614565f121617f9b952559339bffcf6}{Rectangle}\label{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345ad614565f121617f9b952559339bffcf6}
+}]\index{Quad@{Quad}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Quad@{Quad}}\item[{\em 
+\hypertarget{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}{Quad}\label{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}
+}]\end{description}
+\end{Desc}
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5}{\index{Shape.\-h@{Shape.\-h}!Wall@{Wall}}
+\index{Wall@{Wall}!Shape.h@{Shape.\-h}}
+\subsubsection[{Wall}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Wall}}}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{None@{None}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!None@{None}}\item[{\em 
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}{None}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}
+}]Different walls \index{Top@{Top}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Top@{Top}}\item[{\em 
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}{Top}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}
+}]\index{Bottom@{Bottom}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Bottom@{Bottom}}\item[{\em 
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}{Bottom}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}
+}]\index{Left@{Left}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Left@{Left}}\item[{\em 
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}
+}]\index{Right@{Right}!Shape.\-h@{Shape.\-h}}\index{Shape.\-h@{Shape.\-h}!Right@{Right}}\item[{\em 
+\hypertarget{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}{Right}\label{Shape_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}
+}]\end{description}
+\end{Desc}

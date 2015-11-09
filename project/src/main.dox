@@ -1,0 +1,6 @@
+/**
+\mainpage The mainpage of Iteration3
+
+Welcome to the mainpage of iteration3. In this iteration, the main functionalities remain. We have four lights and ten robots moving in a enviroment. When robots touch other robots or lights, the speed and orientation will change. Whenever robots touch wall, they will bound back.
+
+*/

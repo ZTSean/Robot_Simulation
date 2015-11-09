@@ -1,0 +1,96 @@
+\hypertarget{Object_8h}{\section{Object.\-h File Reference}
+\label{Object_8h}\index{Object.\-h@{Object.\-h}}
+}
+
+
+The \hyperlink{classObject}{Object} Class.  
+
+
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNavigate}{Navigate}
+\item 
+class \hyperlink{classObject}{Object}
+\begin{DoxyCompactList}\small\item\em Super Class of Robot\-Class, Target and Obstacle, contains position x, y and size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980}{Object\-Type} \{ \hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980a0349261f505b36305e1a7468fd941de8}{Robot}, 
+\hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980a297b29d409921385e20239f12db235ed}{Obstacle}, 
+\hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980a444cbec7ad70f50f8eec3f6fa116d1da}{Target}
+ \}
+\item 
+enum \hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \{ \hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}{Circle}, 
+\hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}{Triangle}, 
+\hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}{Quad}
+ \}
+\item 
+enum \hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \{ \\*
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}{None}, 
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}{Top}, 
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}{Bottom}, 
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}, 
+\\*
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}{Right}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classObject}{Object} Class. \begin{DoxyAuthor}{Author}
+Group Meryl\-\_\-\-Streep 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+9 March 2015 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{Object_8h_a842c5e2e69277690b064bf363c017980}{\index{Object.\-h@{Object.\-h}!Object\-Type@{Object\-Type}}
+\index{Object\-Type@{Object\-Type}!Object.h@{Object.\-h}}
+\subsubsection[{Object\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Object\-Type}}}\label{Object_8h_a842c5e2e69277690b064bf363c017980}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Robot@{Robot}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Robot@{Robot}}\item[{\em 
+\hypertarget{Object_8h_a842c5e2e69277690b064bf363c017980a0349261f505b36305e1a7468fd941de8}{Robot}\label{Object_8h_a842c5e2e69277690b064bf363c017980a0349261f505b36305e1a7468fd941de8}
+}]Type of \hyperlink{classObject}{Object} \index{Obstacle@{Obstacle}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Obstacle@{Obstacle}}\item[{\em 
+\hypertarget{Object_8h_a842c5e2e69277690b064bf363c017980a297b29d409921385e20239f12db235ed}{Obstacle}\label{Object_8h_a842c5e2e69277690b064bf363c017980a297b29d409921385e20239f12db235ed}
+}]\index{Target@{Target}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Target@{Target}}\item[{\em 
+\hypertarget{Object_8h_a842c5e2e69277690b064bf363c017980a444cbec7ad70f50f8eec3f6fa116d1da}{Target}\label{Object_8h_a842c5e2e69277690b064bf363c017980a444cbec7ad70f50f8eec3f6fa116d1da}
+}]\end{description}
+\end{Desc}
+\hypertarget{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{\index{Object.\-h@{Object.\-h}!Shape\-Type@{Shape\-Type}}
+\index{Shape\-Type@{Shape\-Type}!Object.h@{Object.\-h}}
+\subsubsection[{Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Shape\-Type}}}\label{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Circle@{Circle}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Circle@{Circle}}\item[{\em 
+\hypertarget{Object_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}{Circle}\label{Object_8h_a5a4538eeab397888d88a4eefcc5a1345ad3ce82743a8255ccd69f5b67d257c489}
+}]Shape type of \hyperlink{classObject}{Object} \index{Triangle@{Triangle}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Triangle@{Triangle}}\item[{\em 
+\hypertarget{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}{Triangle}\label{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a773e9be14af3bc697c412f3e6c5c509e}
+}]\index{Quad@{Quad}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Quad@{Quad}}\item[{\em 
+\hypertarget{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}{Quad}\label{Object_8h_a5a4538eeab397888d88a4eefcc5a1345a349990a9494411f297f9349ed29172b3}
+}]\end{description}
+\end{Desc}
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5}{\index{Object.\-h@{Object.\-h}!Wall@{Wall}}
+\index{Wall@{Wall}!Object.h@{Object.\-h}}
+\subsubsection[{Wall}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Wall}}}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{None@{None}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!None@{None}}\item[{\em 
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}{None}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5ac9d3e887722f2bc482bcca9d41c512af}
+}]Different walls \index{Top@{Top}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Top@{Top}}\item[{\em 
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}{Top}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5a47321105d20c4efd6c573a6d829e1ad9}
+}]\index{Bottom@{Bottom}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Bottom@{Bottom}}\item[{\em 
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}{Bottom}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5a05cdd4fa6b505ee008f4e865acfecccb}
+}]\index{Left@{Left}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Left@{Left}}\item[{\em 
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5a9d4d8b0b72fc2659da772d761a3c5ecb}
+}]\index{Right@{Right}!Object.\-h@{Object.\-h}}\index{Object.\-h@{Object.\-h}!Right@{Right}}\item[{\em 
+\hypertarget{Object_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}{Right}\label{Object_8h_ad4f6886266572e51d198a61a6c762ce5ad48f7af8c070184f3774c8e85854eb66}
+}]\end{description}
+\end{Desc}

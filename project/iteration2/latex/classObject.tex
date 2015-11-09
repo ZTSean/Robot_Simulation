@@ -1,0 +1,470 @@
+\hypertarget{classObject}{\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+}
+
+
+Super Class of Robot\-Class, Target and Obstacle, contains position x, y and size.  
+
+
+
+
+{\ttfamily \#include $<$Object.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_a40860402e64d8008fb42329df7097cdb}{Object} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classObject_a1578ef305ecdd88d8b2c0b4408d0f4f2}{Object} (double x, double y, double s, double sp, double ori, \hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} sh, \hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980}{Object\-Type} objtype, float c\mbox{[}3\mbox{]}, int id)
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classObject_ae8f5483f459e46687bd01e6f9977afd3}{$\sim$\-Object} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a20943e8303df77a63e7173b7cb31fcb4}{set\-Shape} (\hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} shape)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s shape through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a24d288762ff0406ea1018ce0063c5636}{set\-Color} (float c\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s color through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a91f40854ef8471bdc38d8b3848e3c25a}{set\-Type} (\hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980}{Object\-Type} obj)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s type through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a31495a5948411e2cb7b10e2c211b2f9b}{set\-Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s Position through arguements. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a0ade9aa73271d6ec7aa9bf6b0d458270}{set\-Size} (double s)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classObject}{Object}'s size through arguement. \end{DoxyCompactList}\item 
+double \hyperlink{classObject_a82313b69986eebc7e2dff3925e2684b2}{get\-X\-Position} ()
+\begin{DoxyCompactList}\small\item\em Return current x position of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+double \hyperlink{classObject_aa2816e5e411b0bc1179a2762f7e2b552}{get\-Y\-Position} ()
+\begin{DoxyCompactList}\small\item\em Return current y position of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+double \hyperlink{classObject_aa45378bcd52e52cae8070de90b2b1148}{get\-Size} ()
+\begin{DoxyCompactList}\small\item\em Return current size of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a9c0c9ea4d4168ba6775ec8d4ce0d980a}{set\-Orientation} (double degrees)
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s orientation through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a68f33643bbd5fe7410f4f367433010b3}{set\-Speed} (double pps)
+\begin{DoxyCompactList}\small\item\em set \hyperlink{classObject}{Object}'s speed through arguement. \end{DoxyCompactList}\item 
+double \hyperlink{classObject_a138712103a66b8d7268ef839464a1262}{get\-Orientation} ()
+\begin{DoxyCompactList}\small\item\em Return current orientation of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+double \hyperlink{classObject_a407ec2b4aaa93429355c58e8d4a3d138}{get\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Return current speed of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+\hyperlink{structNavigate}{Navigate} \hyperlink{classObject_a4082c792274872b764ce5b271e1bcb9d}{move} (double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Return movement vector in elapsed time. \end{DoxyCompactList}\item 
+\hyperlink{structNavigate}{Navigate} \hyperlink{classObject_aaca6dc786800652d76bbf26672a8d0c9}{rotate} (double d)
+\begin{DoxyCompactList}\small\item\em Return movement vector in certain degree. \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classObject_a881b6317e1cb3a907a46875bfb91949a}{get\-Color} ()
+\begin{DoxyCompactList}\small\item\em Set \hyperlink{classObject}{Object}'s color through arguements. \end{DoxyCompactList}\item 
+\hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980}{Object\-Type} \hyperlink{classObject_acc41783171d260422196748e94109d55}{get\-Object\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{classObject}{Object}'s type through arguements. \end{DoxyCompactList}\item 
+\hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \hyperlink{classObject_a2db9eb28fac0df737c873b03a32cabdf}{get\-Shape\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{classObject}{Object}'s shape through arguements. \end{DoxyCompactList}\item 
+int \hyperlink{classObject_a99a8389a22915067650a7f5fb9167c03}{get\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{classObject}{Object}'s I\-D through arguements. \end{DoxyCompactList}\item 
+\hyperlink{Object_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \hyperlink{classObject_a36771a8ad58bb897cfc593ad76965706}{detect\-Wall} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Return the type of wall that the \hyperlink{classObject}{Object} detects. \end{DoxyCompactList}\item 
+bool \hyperlink{classObject_a0f6c6090fa37066c35b7688f4012085b}{detect\-Obstacle} (\hyperlink{classObject}{Object} obj)
+\begin{DoxyCompactList}\small\item\em Return if a \hyperlink{classObject}{Object} detects an obstacle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Object_8h_a842c5e2e69277690b064bf363c017980}{Object\-Type} \hyperlink{classObject_afa7fbd7b761dfb5f3c930fc2cb21e953}{obj\-Type}
+\item 
+\hyperlink{Object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \hyperlink{classObject_a9a991272a9e2ab2d05f963936386662e}{shape\-Type}
+\item 
+int \hyperlink{classObject_a4a82b2bbd9ca66c55898ebf012134171}{I\-D}
+\item 
+double \hyperlink{classObject_a61b87ea36899ba85231863f3c3bc55b3}{size}
+\item 
+double \hyperlink{classObject_a1f71a5693147aecc701db4ab51d3edcc}{pos\-\_\-x}
+\item 
+double \hyperlink{classObject_a986134c27f3e74ba41a4d28e20b183a9}{pos\-\_\-y}
+\item 
+float \hyperlink{classObject_a50e27dde92065fad6aa039f1af278c0b}{color} \mbox{[}3\mbox{]}
+\item 
+double \hyperlink{classObject_ab452402c67c3bee95678cc8508be8034}{speed}
+\item 
+double \hyperlink{classObject_a0b91fc65d0880b7c6d47e185e6260f53}{orientation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Super Class of Robot\-Class, Target and Obstacle, contains position x, y and size. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObject_a40860402e64d8008fb42329df7097cdb}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a40860402e64d8008fb42329df7097cdb}
+
+
+The default constructor. 
+
+\hypertarget{classObject_a1578ef305ecdd88d8b2c0b4408d0f4f2}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{s, }
+\item[{double}]{sp, }
+\item[{double}]{ori, }
+\item[{{\bf Shape\-Type}}]{sh, }
+\item[{{\bf Object\-Type}}]{objtype, }
+\item[{float}]{c\mbox{[}3\mbox{]}, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classObject_a1578ef305ecdd88d8b2c0b4408d0f4f2}
+
+
+A Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of object. \\
+\hline
+{\em y} & The y position of object. \\
+\hline
+{\em s} & The size of object. \\
+\hline
+{\em sp} & The speed of object. \\
+\hline
+{\em ori} & The orientation of the object \\
+\hline
+{\em sh} & The shape\-Type of the object. Circle/\-Triangle/ quad \\
+\hline
+{\em objtype} & The Type og the \hyperlink{classObject}{Object}. Robot/ Obstacle/ Target \\
+\hline
+{\em c\mbox{[}3\mbox{]}} & The color of object indicated by an array of floats. \\
+\hline
+{\em I\-D} & A unique I\-D number for each object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_ae8f5483f459e46687bd01e6f9977afd3}{\index{Object@{Object}!$\sim$\-Object@{$\sim$\-Object}}
+\index{$\sim$\-Object@{$\sim$\-Object}!Object@{Object}}
+\subsubsection[{$\sim$\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::$\sim$\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_ae8f5483f459e46687bd01e6f9977afd3}
+
+
+The default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_a0f6c6090fa37066c35b7688f4012085b}{\index{Object@{Object}!detect\-Obstacle@{detect\-Obstacle}}
+\index{detect\-Obstacle@{detect\-Obstacle}!Object@{Object}}
+\subsubsection[{detect\-Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\-::detect\-Obstacle (
+\begin{DoxyParamCaption}
+\item[{{\bf Object}}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classObject_a0f6c6090fa37066c35b7688f4012085b}
+
+
+Return if a \hyperlink{classObject}{Object} detects an obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to be detected whether there is a collision with it. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a36771a8ad58bb897cfc593ad76965706}{\index{Object@{Object}!detect\-Wall@{detect\-Wall}}
+\index{detect\-Wall@{detect\-Wall}!Object@{Object}}
+\subsubsection[{detect\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wall} Object\-::detect\-Wall (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classObject_a36771a8ad58bb897cfc593ad76965706}
+
+
+Return the type of wall that the \hyperlink{classObject}{Object} detects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the wall. \\
+\hline
+{\em height} & The height of the wall. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a881b6317e1cb3a907a46875bfb91949a}{\index{Object@{Object}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!Object@{Object}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ Object\-::get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a881b6317e1cb3a907a46875bfb91949a}
+
+
+Set \hyperlink{classObject}{Object}'s color through arguements. 
+
+\hypertarget{classObject_a99a8389a22915067650a7f5fb9167c03}{\index{Object@{Object}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!Object@{Object}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a99a8389a22915067650a7f5fb9167c03}
+
+
+Return \hyperlink{classObject}{Object}'s I\-D through arguements. 
+
+\hypertarget{classObject_acc41783171d260422196748e94109d55}{\index{Object@{Object}!get\-Object\-Type@{get\-Object\-Type}}
+\index{get\-Object\-Type@{get\-Object\-Type}!Object@{Object}}
+\subsubsection[{get\-Object\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Type} Object\-::get\-Object\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_acc41783171d260422196748e94109d55}
+
+
+Return \hyperlink{classObject}{Object}'s type through arguements. 
+
+\hypertarget{classObject_a138712103a66b8d7268ef839464a1262}{\index{Object@{Object}!get\-Orientation@{get\-Orientation}}
+\index{get\-Orientation@{get\-Orientation}!Object@{Object}}
+\subsubsection[{get\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::get\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a138712103a66b8d7268ef839464a1262}
+
+
+Return current orientation of \hyperlink{classObject}{Object}. 
+
+\hypertarget{classObject_a2db9eb28fac0df737c873b03a32cabdf}{\index{Object@{Object}!get\-Shape\-Type@{get\-Shape\-Type}}
+\index{get\-Shape\-Type@{get\-Shape\-Type}!Object@{Object}}
+\subsubsection[{get\-Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\-Type} Object\-::get\-Shape\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a2db9eb28fac0df737c873b03a32cabdf}
+
+
+Return \hyperlink{classObject}{Object}'s shape through arguements. 
+
+\hypertarget{classObject_aa45378bcd52e52cae8070de90b2b1148}{\index{Object@{Object}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Object@{Object}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_aa45378bcd52e52cae8070de90b2b1148}
+
+
+Return current size of \hyperlink{classObject}{Object}. 
+
+\hypertarget{classObject_a407ec2b4aaa93429355c58e8d4a3d138}{\index{Object@{Object}!get\-Speed@{get\-Speed}}
+\index{get\-Speed@{get\-Speed}!Object@{Object}}
+\subsubsection[{get\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::get\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a407ec2b4aaa93429355c58e8d4a3d138}
+
+
+Return current speed of \hyperlink{classObject}{Object}. 
+
+\hypertarget{classObject_a82313b69986eebc7e2dff3925e2684b2}{\index{Object@{Object}!get\-X\-Position@{get\-X\-Position}}
+\index{get\-X\-Position@{get\-X\-Position}!Object@{Object}}
+\subsubsection[{get\-X\-Position}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::get\-X\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a82313b69986eebc7e2dff3925e2684b2}
+
+
+Return current x position of \hyperlink{classObject}{Object}. 
+
+\hypertarget{classObject_aa2816e5e411b0bc1179a2762f7e2b552}{\index{Object@{Object}!get\-Y\-Position@{get\-Y\-Position}}
+\index{get\-Y\-Position@{get\-Y\-Position}!Object@{Object}}
+\subsubsection[{get\-Y\-Position}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::get\-Y\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_aa2816e5e411b0bc1179a2762f7e2b552}
+
+
+Return current y position of \hyperlink{classObject}{Object}. 
+
+\hypertarget{classObject_a4082c792274872b764ce5b271e1bcb9d}{\index{Object@{Object}!move@{move}}
+\index{move@{move}!Object@{Object}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigate} Object\-::move (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classObject_a4082c792274872b764ce5b271e1bcb9d}
+
+
+Return movement vector in elapsed time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\-Time} & delta time since start time \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_aaca6dc786800652d76bbf26672a8d0c9}{\index{Object@{Object}!rotate@{rotate}}
+\index{rotate@{rotate}!Object@{Object}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigate} Object\-::rotate (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{classObject_aaca6dc786800652d76bbf26672a8d0c9}
+
+
+Return movement vector in certain degree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The degree that object will rotate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a24d288762ff0406ea1018ce0063c5636}{\index{Object@{Object}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!Object@{Object}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{float}]{c\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classObject_a24d288762ff0406ea1018ce0063c5636}
+
+
+Set \hyperlink{classObject}{Object}'s color through arguements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\mbox{[}$\,$\mbox{]}} & Set \hyperlink{classObject}{Object}'s color according to the array passed in. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a9c0c9ea4d4168ba6775ec8d4ce0d980a}{\index{Object@{Object}!set\-Orientation@{set\-Orientation}}
+\index{set\-Orientation@{set\-Orientation}!Object@{Object}}
+\subsubsection[{set\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Orientation (
+\begin{DoxyParamCaption}
+\item[{double}]{degrees}
+\end{DoxyParamCaption}
+)}}\label{classObject_a9c0c9ea4d4168ba6775ec8d4ce0d980a}
+
+
+Set \hyperlink{classObject}{Object}'s orientation through arguement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & Set object's orientation according to arguement double degrees. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a31495a5948411e2cb7b10e2c211b2f9b}{\index{Object@{Object}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Object@{Object}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classObject_a31495a5948411e2cb7b10e2c211b2f9b}
+
+
+Set \hyperlink{classObject}{Object}'s Position through arguements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Set \hyperlink{classObject}{Object}'s position according to arguement double x. \\
+\hline
+{\em y} & Set \hyperlink{classObject}{Object}'s position according to arguement double y. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a20943e8303df77a63e7173b7cb31fcb4}{\index{Object@{Object}!set\-Shape@{set\-Shape}}
+\index{set\-Shape@{set\-Shape}!Object@{Object}}
+\subsubsection[{set\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape\-Type}}]{shape}
+\end{DoxyParamCaption}
+)}}\label{classObject_a20943e8303df77a63e7173b7cb31fcb4}
+
+
+Set \hyperlink{classObject}{Object}'s shape through arguements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & Set \hyperlink{classObject}{Object}'s shape according to the shape passed in. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a0ade9aa73271d6ec7aa9bf6b0d458270}{\index{Object@{Object}!set\-Size@{set\-Size}}
+\index{set\-Size@{set\-Size}!Object@{Object}}
+\subsubsection[{set\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Size (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classObject_a0ade9aa73271d6ec7aa9bf6b0d458270}
+
+
+set \hyperlink{classObject}{Object}'s size through arguement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Set \hyperlink{classObject}{Object}'s size according to arguement double s. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a68f33643bbd5fe7410f4f367433010b3}{\index{Object@{Object}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!Object@{Object}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{pps}
+\end{DoxyParamCaption}
+)}}\label{classObject_a68f33643bbd5fe7410f4f367433010b3}
+
+
+set \hyperlink{classObject}{Object}'s speed through arguement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pps} & Set object's speed according to arguement double pps. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a91f40854ef8471bdc38d8b3848e3c25a}{\index{Object@{Object}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!Object@{Object}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Type}}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classObject_a91f40854ef8471bdc38d8b3848e3c25a}
+
+
+Set \hyperlink{classObject}{Object}'s type through arguements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Set \hyperlink{classObject}{Object}'s type according to the array passed in, the arguement obj could be robot, obstacle or target. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classObject_a50e27dde92065fad6aa039f1af278c0b}{\index{Object@{Object}!color@{color}}
+\index{color@{color}!Object@{Object}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}float Object\-::color\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a50e27dde92065fad6aa039f1af278c0b}
+color of object \hypertarget{classObject_a4a82b2bbd9ca66c55898ebf012134171}{\index{Object@{Object}!I\-D@{I\-D}}
+\index{I\-D@{I\-D}!Object@{Object}}
+\subsubsection[{I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::\-I\-D\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a4a82b2bbd9ca66c55898ebf012134171}
+I\-D of object \hypertarget{classObject_afa7fbd7b761dfb5f3c930fc2cb21e953}{\index{Object@{Object}!obj\-Type@{obj\-Type}}
+\index{obj\-Type@{obj\-Type}!Object@{Object}}
+\subsubsection[{obj\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Type} Object\-::obj\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_afa7fbd7b761dfb5f3c930fc2cb21e953}
+type of object \hypertarget{classObject_a0b91fc65d0880b7c6d47e185e6260f53}{\index{Object@{Object}!orientation@{orientation}}
+\index{orientation@{orientation}!Object@{Object}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::orientation\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a0b91fc65d0880b7c6d47e185e6260f53}
+orientation of object \hypertarget{classObject_a1f71a5693147aecc701db4ab51d3edcc}{\index{Object@{Object}!pos\-\_\-x@{pos\-\_\-x}}
+\index{pos\-\_\-x@{pos\-\_\-x}!Object@{Object}}
+\subsubsection[{pos\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::pos\-\_\-x\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a1f71a5693147aecc701db4ab51d3edcc}
+x position of object \hypertarget{classObject_a986134c27f3e74ba41a4d28e20b183a9}{\index{Object@{Object}!pos\-\_\-y@{pos\-\_\-y}}
+\index{pos\-\_\-y@{pos\-\_\-y}!Object@{Object}}
+\subsubsection[{pos\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::pos\-\_\-y\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a986134c27f3e74ba41a4d28e20b183a9}
+y position of object \hypertarget{classObject_a9a991272a9e2ab2d05f963936386662e}{\index{Object@{Object}!shape\-Type@{shape\-Type}}
+\index{shape\-Type@{shape\-Type}!Object@{Object}}
+\subsubsection[{shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\-Type} Object\-::shape\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a9a991272a9e2ab2d05f963936386662e}
+shape of object \hypertarget{classObject_a61b87ea36899ba85231863f3c3bc55b3}{\index{Object@{Object}!size@{size}}
+\index{size@{size}!Object@{Object}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_a61b87ea36899ba85231863f3c3bc55b3}
+size of object \hypertarget{classObject_ab452402c67c3bee95678cc8508be8034}{\index{Object@{Object}!speed@{speed}}
+\index{speed@{speed}!Object@{Object}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-::speed\hspace{0.3cm}{\ttfamily [private]}}}\label{classObject_ab452402c67c3bee95678cc8508be8034}
+speed of object 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Object_8h}{Object.\-h}\item 
+\hyperlink{Object_8cpp}{Object.\-cpp}\end{DoxyCompactItemize}

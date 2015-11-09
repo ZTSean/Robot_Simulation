@@ -1,0 +1,478 @@
+\hypertarget{classRobotClass}{\section{Robot\-Class Class Reference}
+\label{classRobotClass}\index{Robot\-Class@{Robot\-Class}}
+}
+
+
+A robot class contains attributes and hehaviors.  
+
+
+
+
+{\ttfamily \#include $<$Robot\-Class.\-h$>$}
+
+Inheritance diagram for Robot\-Class\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRobotClass}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{Robot\-Class} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classRobotClass_ab91816f1d752646bc82cc20f9710a107}{Robot\-Class} (double x, double y, double w, double l, double sp, double ori, \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} \hyperlink{classShape_a18af04fdf7a9e121518f3c7278693c60}{shape\-Type}, float c\mbox{[}3\mbox{]}, \hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} ct, int id)
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{$\sim$\-Robot\-Class} ()
+\begin{DoxyCompactList}\small\item\em Default deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a583bdc55d13af3e8bd11f89d783455c0}{set\-I\-D} (int id)
+\begin{DoxyCompactList}\small\item\em set robot's I\-D through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_aaa965d250757f64738c66387791a6263}{set\-Connection\-Type} (\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} newconnection\-Type)
+\begin{DoxyCompactList}\small\item\em set Robot's Connection\-Type through arguement. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a7debd529fda1f510830328cf873cbc63}{set\-Left\-Speed} (double sp)
+\begin{DoxyCompactList}\small\item\em set Robot's left wheel speed. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a202a15a9709496ca9736094af0e84ecc}{set\-Right\-Speed} (double sp)
+\begin{DoxyCompactList}\small\item\em set Robot's right wheel speed. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a819a477d23d1c54d2094a477feed8477}{set\-Left\-Wheel\-Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em set Robot's left wheel position. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_ac72404efc5f43d9e25bcd2190a987cc5}{set\-Right\-Wheel\-Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em set Robot's right wheel x position. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_ac5980c62b0fa569360e12dc066da98a4}{set\-New\-Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em set Robot's position, according to left wheel and right wheel. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a348207c6b74eeff725c5f329f0579482}{set\-Action\-Range} (double ar)
+\begin{DoxyCompactList}\small\item\em set Robot's action range, according to input. \end{DoxyCompactList}\item 
+int \hyperlink{classRobotClass_a6b817a39e292edf591c65a68a31a3012}{get\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em Return I\-D of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}{get\-Left\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Return leftspeed of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}{get\-Right\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Return rightspeed of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_a3fc92ded2588d8e880be8301fe7e78ca}{get\-Left\-Wheel\-X} ()
+\begin{DoxyCompactList}\small\item\em Return Left\-Wheel\-X of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_ab6d7104d418020f8a1d7254700eead0e}{get\-Left\-Wheel\-Y} ()
+\begin{DoxyCompactList}\small\item\em Return Left\-Wheel\-Y of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_a5d32eb96cbb3bfe01b956f09e35b925c}{get\-Right\-Wheel\-X} ()
+\begin{DoxyCompactList}\small\item\em Return Right\-Wheel\-X of robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_abc35edf633f6b03a0956e2bdb68a127c}{get\-Right\-Wheel\-Y} ()
+\begin{DoxyCompactList}\small\item\em Return Right\-Wheel\-Y of robot. \end{DoxyCompactList}\item 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} \hyperlink{classRobotClass_ad1f430d26cf7265285db0742a0fd6f34}{get\-Connection\-Type} ()
+\begin{DoxyCompactList}\small\item\em Return connection type of Robot. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_a37170c1d224daa872fb4a506719bb43f}{get\-Action\-Range} ()
+\begin{DoxyCompactList}\small\item\em Return action range of Robot. \end{DoxyCompactList}\item 
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \hyperlink{classRobotClass_a3a660d9392490322535d0dda4fa27f27}{detect\-Wall} (double witdth, double height)
+\begin{DoxyCompactList}\small\item\em Detect whether robot against the wall of window. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a111ff5cb11fb67bf3cae0797d955e24a}{detect\-Stimulation} (std\-::vector$<$ \hyperlink{classRobotClass}{Robot\-Class} $>$ robots, std\-::vector$<$ \hyperlink{classLight}{Light} $>$ lights, double stimulation\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Detect whether robot against obstacle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classSensor}{Sensor} $>$ \hyperlink{classRobotClass_ab9fae941de661646a5dbc9758e86306d}{sensors}
+\item 
+std\-::vector$<$ \hyperlink{classWheel}{Wheel} $>$ \hyperlink{classRobotClass_a52934dab5fdec48b101ad0c71fb60e48}{wheels}
+\item 
+int \hyperlink{classRobotClass_afccead30da94de14c11e2305c33991f2}{I\-D}
+\item 
+\hyperlink{Sensor_8h_aa1f0e2efd52935fd01bfece0fbead81f}{Connection\-Type} \hyperlink{classRobotClass_a073b0cd68ebfd906f9dc42029e04d1fe}{connection\-Type}
+\item 
+double \hyperlink{classRobotClass_a009553675263e4e281305051f9afc2ba}{action\-Range}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A robot class contains attributes and hehaviors. 
+
+Inherit from \hyperlink{classShape}{Shape} class, add speed and orientation attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}
+
+
+The default constructor. 
+
+\hypertarget{classRobotClass_ab91816f1d752646bc82cc20f9710a107}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{w, }
+\item[{double}]{l, }
+\item[{double}]{sp, }
+\item[{double}]{ori, }
+\item[{{\bf Shape\-Type}}]{shape\-Type, }
+\item[{float}]{c\mbox{[}3\mbox{]}, }
+\item[{{\bf Connection\-Type}}]{ct, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ab91816f1d752646bc82cc20f9710a107}
+
+
+A Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of robot. \\
+\hline
+{\em y} & The y position of robot. \\
+\hline
+{\em w} & The width of robot. \\
+\hline
+{\em l} & The length of robot. \\
+\hline
+{\em sp} & The speed of robot. \\
+\hline
+{\em ori} & The orientation of robot. \\
+\hline
+{\em shape\-Type} & The shape type of robot. \\
+\hline
+{\em c} & The color of robot. \\
+\hline
+{\em ct} & The connection type of robot. \\
+\hline
+{\em id} & The id of robot. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{\index{Robot\-Class@{Robot\-Class}!$\sim$\-Robot\-Class@{$\sim$\-Robot\-Class}}
+\index{$\sim$\-Robot\-Class@{$\sim$\-Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{$\sim$\-Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::$\sim$\-Robot\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}
+
+
+Default deconstructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRobotClass_a111ff5cb11fb67bf3cae0797d955e24a}{\index{Robot\-Class@{Robot\-Class}!detect\-Stimulation@{detect\-Stimulation}}
+\index{detect\-Stimulation@{detect\-Stimulation}!RobotClass@{Robot\-Class}}
+\subsubsection[{detect\-Stimulation}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::detect\-Stimulation (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Robot\-Class} $>$}]{robots, }
+\item[{std\-::vector$<$ {\bf Light} $>$}]{lights, }
+\item[{double}]{stimulation\mbox{[}2\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a111ff5cb11fb67bf3cae0797d955e24a}
+
+
+Detect whether robot against obstacle. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em obs} & Obstacle that used to detect whether there is a collision \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a3a660d9392490322535d0dda4fa27f27}{\index{Robot\-Class@{Robot\-Class}!detect\-Wall@{detect\-Wall}}
+\index{detect\-Wall@{detect\-Wall}!RobotClass@{Robot\-Class}}
+\subsubsection[{detect\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wall} Robot\-Class\-::detect\-Wall (
+\begin{DoxyParamCaption}
+\item[{double}]{witdth, }
+\item[{double}]{height}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a3a660d9392490322535d0dda4fa27f27}
+
+
+Detect whether robot against the wall of window. 
+
+\begin{DoxyAuthor}{Author}
+Triny Chen and Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The witdth of window(default\-: 800) \\
+\hline
+{\em height} & The height of window(default\-: 800) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a37170c1d224daa872fb4a506719bb43f}{\index{Robot\-Class@{Robot\-Class}!get\-Action\-Range@{get\-Action\-Range}}
+\index{get\-Action\-Range@{get\-Action\-Range}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Action\-Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a37170c1d224daa872fb4a506719bb43f}
+
+
+Return action range of Robot. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ad1f430d26cf7265285db0742a0fd6f34}{\index{Robot\-Class@{Robot\-Class}!get\-Connection\-Type@{get\-Connection\-Type}}
+\index{get\-Connection\-Type@{get\-Connection\-Type}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Type} Robot\-Class\-::get\-Connection\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ad1f430d26cf7265285db0742a0fd6f34}
+
+
+Return connection type of Robot. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a6b817a39e292edf591c65a68a31a3012}{\index{Robot\-Class@{Robot\-Class}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Robot\-Class\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a6b817a39e292edf591c65a68a31a3012}
+
+
+Return I\-D of robot. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}{\index{Robot\-Class@{Robot\-Class}!get\-Left\-Speed@{get\-Left\-Speed}}
+\index{get\-Left\-Speed@{get\-Left\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Left\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Left\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}
+
+
+Return leftspeed of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a3fc92ded2588d8e880be8301fe7e78ca}{\index{Robot\-Class@{Robot\-Class}!get\-Left\-Wheel\-X@{get\-Left\-Wheel\-X}}
+\index{get\-Left\-Wheel\-X@{get\-Left\-Wheel\-X}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Left\-Wheel\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Left\-Wheel\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a3fc92ded2588d8e880be8301fe7e78ca}
+
+
+Return Left\-Wheel\-X of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ab6d7104d418020f8a1d7254700eead0e}{\index{Robot\-Class@{Robot\-Class}!get\-Left\-Wheel\-Y@{get\-Left\-Wheel\-Y}}
+\index{get\-Left\-Wheel\-Y@{get\-Left\-Wheel\-Y}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Left\-Wheel\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Left\-Wheel\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ab6d7104d418020f8a1d7254700eead0e}
+
+
+Return Left\-Wheel\-Y of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}{\index{Robot\-Class@{Robot\-Class}!get\-Right\-Speed@{get\-Right\-Speed}}
+\index{get\-Right\-Speed@{get\-Right\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Right\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Right\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}
+
+
+Return rightspeed of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a5d32eb96cbb3bfe01b956f09e35b925c}{\index{Robot\-Class@{Robot\-Class}!get\-Right\-Wheel\-X@{get\-Right\-Wheel\-X}}
+\index{get\-Right\-Wheel\-X@{get\-Right\-Wheel\-X}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Right\-Wheel\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Right\-Wheel\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a5d32eb96cbb3bfe01b956f09e35b925c}
+
+
+Return Right\-Wheel\-X of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_abc35edf633f6b03a0956e2bdb68a127c}{\index{Robot\-Class@{Robot\-Class}!get\-Right\-Wheel\-Y@{get\-Right\-Wheel\-Y}}
+\index{get\-Right\-Wheel\-Y@{get\-Right\-Wheel\-Y}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Right\-Wheel\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Right\-Wheel\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_abc35edf633f6b03a0956e2bdb68a127c}
+
+
+Return Right\-Wheel\-Y of robot. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a348207c6b74eeff725c5f329f0579482}{\index{Robot\-Class@{Robot\-Class}!set\-Action\-Range@{set\-Action\-Range}}
+\index{set\-Action\-Range@{set\-Action\-Range}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Action\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{ar}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a348207c6b74eeff725c5f329f0579482}
+
+
+set Robot's action range, according to input. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_aaa965d250757f64738c66387791a6263}{\index{Robot\-Class@{Robot\-Class}!set\-Connection\-Type@{set\-Connection\-Type}}
+\index{set\-Connection\-Type@{set\-Connection\-Type}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Connection\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection\-Type}}]{newconnection\-Type}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_aaa965d250757f64738c66387791a6263}
+
+
+set Robot's Connection\-Type through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em newconnection\-Type} & Set Robot's connection\-Type according to arguement newconnection\-Type. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a583bdc55d13af3e8bd11f89d783455c0}{\index{Robot\-Class@{Robot\-Class}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a583bdc55d13af3e8bd11f89d783455c0}
+
+
+set robot's I\-D through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Wheel\-I\-D} & Set robot's I\-D according to arguement id. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a7debd529fda1f510830328cf873cbc63}{\index{Robot\-Class@{Robot\-Class}!set\-Left\-Speed@{set\-Left\-Speed}}
+\index{set\-Left\-Speed@{set\-Left\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Left\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Left\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{sp}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a7debd529fda1f510830328cf873cbc63}
+
+
+set Robot's left wheel speed. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a819a477d23d1c54d2094a477feed8477}{\index{Robot\-Class@{Robot\-Class}!set\-Left\-Wheel\-Position@{set\-Left\-Wheel\-Position}}
+\index{set\-Left\-Wheel\-Position@{set\-Left\-Wheel\-Position}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Left\-Wheel\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Left\-Wheel\-Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a819a477d23d1c54d2094a477feed8477}
+
+
+set Robot's left wheel position. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ac5980c62b0fa569360e12dc066da98a4}{\index{Robot\-Class@{Robot\-Class}!set\-New\-Position@{set\-New\-Position}}
+\index{set\-New\-Position@{set\-New\-Position}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-New\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-New\-Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ac5980c62b0fa569360e12dc066da98a4}
+
+
+set Robot's position, according to left wheel and right wheel. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a202a15a9709496ca9736094af0e84ecc}{\index{Robot\-Class@{Robot\-Class}!set\-Right\-Speed@{set\-Right\-Speed}}
+\index{set\-Right\-Speed@{set\-Right\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Right\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Right\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{sp}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a202a15a9709496ca9736094af0e84ecc}
+
+
+set Robot's right wheel speed. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ac72404efc5f43d9e25bcd2190a987cc5}{\index{Robot\-Class@{Robot\-Class}!set\-Right\-Wheel\-Position@{set\-Right\-Wheel\-Position}}
+\index{set\-Right\-Wheel\-Position@{set\-Right\-Wheel\-Position}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Right\-Wheel\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Right\-Wheel\-Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ac72404efc5f43d9e25bcd2190a987cc5}
+
+
+set Robot's right wheel x position. 
+
+\begin{DoxyAuthor}{Author}
+Yangyun Li 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRobotClass_a009553675263e4e281305051f9afc2ba}{\index{Robot\-Class@{Robot\-Class}!action\-Range@{action\-Range}}
+\index{action\-Range@{action\-Range}!RobotClass@{Robot\-Class}}
+\subsubsection[{action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::action\-Range\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobotClass_a009553675263e4e281305051f9afc2ba}
+Action range of robot \hypertarget{classRobotClass_a073b0cd68ebfd906f9dc42029e04d1fe}{\index{Robot\-Class@{Robot\-Class}!connection\-Type@{connection\-Type}}
+\index{connection\-Type@{connection\-Type}!RobotClass@{Robot\-Class}}
+\subsubsection[{connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Type} Robot\-Class\-::connection\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobotClass_a073b0cd68ebfd906f9dc42029e04d1fe}
+Connecntion type of robot \hypertarget{classRobotClass_afccead30da94de14c11e2305c33991f2}{\index{Robot\-Class@{Robot\-Class}!I\-D@{I\-D}}
+\index{I\-D@{I\-D}!RobotClass@{Robot\-Class}}
+\subsubsection[{I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Robot\-Class\-::\-I\-D\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobotClass_afccead30da94de14c11e2305c33991f2}
+I\-D of robot \hypertarget{classRobotClass_ab9fae941de661646a5dbc9758e86306d}{\index{Robot\-Class@{Robot\-Class}!sensors@{sensors}}
+\index{sensors@{sensors}!RobotClass@{Robot\-Class}}
+\subsubsection[{sensors}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Sensor}$>$ Robot\-Class\-::sensors\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobotClass_ab9fae941de661646a5dbc9758e86306d}
+speed of robot \hypertarget{classRobotClass_a52934dab5fdec48b101ad0c71fb60e48}{\index{Robot\-Class@{Robot\-Class}!wheels@{wheels}}
+\index{wheels@{wheels}!RobotClass@{Robot\-Class}}
+\subsubsection[{wheels}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Wheel}$>$ Robot\-Class\-::wheels\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobotClass_a52934dab5fdec48b101ad0c71fb60e48}
+orientation of robot 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RobotClass_8h}{Robot\-Class.\-h}\item 
+\hyperlink{RobotClass_8cpp}{Robot\-Class.\-cpp}\end{DoxyCompactItemize}

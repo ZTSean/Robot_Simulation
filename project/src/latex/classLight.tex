@@ -1,0 +1,168 @@
+\hypertarget{classLight}{\section{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+}
+
+
+A light class contains attributes and behaviors.  
+
+
+
+
+{\ttfamily \#include $<$Light.\-h$>$}
+
+Inheritance diagram for Light\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLight}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLight_a1e4797b7ed1488b6d6990489f5434c34}{Light} (double x, double y, double w, double l, double sp, double ori, \hyperlink{Shape_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} st, float c\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em A Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\-Light} ()
+\begin{DoxyCompactList}\small\item\em Default deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_ac9e3a10f4413cdd83325397e38cd2dbe}{set\-Action\-Range} (double new\-Range)
+\begin{DoxyCompactList}\small\item\em set light's action range through arguement. \end{DoxyCompactList}\item 
+double \hyperlink{classLight_afe69e219ba4af853ad17408b50147cfe}{get\-Action\-Range} ()
+\begin{DoxyCompactList}\small\item\em Return action range of the light. \end{DoxyCompactList}\item 
+\hyperlink{Shape_8h_ad4f6886266572e51d198a61a6c762ce5}{Wall} \hyperlink{classLight_a47adb475bd05d17248c28c62c41dbc8a}{detect\-Wall} (double witdth, double height)
+\begin{DoxyCompactList}\small\item\em Detect whether light against the wall of window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classLight_ada425b10c6d859e3348165267f19d752}{action\-Range}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A light class contains attributes and behaviors. 
+
+Inherit from \hyperlink{classShape}{Shape} class, add speed and orientation attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLight_a1e4797b7ed1488b6d6990489f5434c34}{\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}Light\-::\-Light (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{w, }
+\item[{double}]{l, }
+\item[{double}]{sp, }
+\item[{double}]{ori, }
+\item[{{\bf Shape\-Type}}]{st, }
+\item[{float}]{c\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classLight_a1e4797b7ed1488b6d6990489f5434c34}
+
+
+A Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em y} & The y position of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em w} & The width of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em l} & The length of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em sp} & The speed of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em ori} & The orientation of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em st} & The Shape\-Type of \hyperlink{classShape}{Shape}. \\
+\hline
+{\em c} & The color of \hyperlink{classShape}{Shape}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}{\index{Light@{Light}!$\sim$\-Light@{$\sim$\-Light}}
+\index{$\sim$\-Light@{$\sim$\-Light}!Light@{Light}}
+\subsubsection[{$\sim$\-Light}]{\setlength{\rightskip}{0pt plus 5cm}Light\-::$\sim$\-Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}
+
+
+Default deconstructor. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLight_a47adb475bd05d17248c28c62c41dbc8a}{\index{Light@{Light}!detect\-Wall@{detect\-Wall}}
+\index{detect\-Wall@{detect\-Wall}!Light@{Light}}
+\subsubsection[{detect\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wall} Light\-::detect\-Wall (
+\begin{DoxyParamCaption}
+\item[{double}]{witdth, }
+\item[{double}]{height}
+\end{DoxyParamCaption}
+)}}\label{classLight_a47adb475bd05d17248c28c62c41dbc8a}
+
+
+Detect whether light against the wall of window. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The witdth of window(default\-: 800) \\
+\hline
+{\em height} & The height of window(default\-: 800) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLight_afe69e219ba4af853ad17408b50147cfe}{\index{Light@{Light}!get\-Action\-Range@{get\-Action\-Range}}
+\index{get\-Action\-Range@{get\-Action\-Range}!Light@{Light}}
+\subsubsection[{get\-Action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}double Light\-::get\-Action\-Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLight_afe69e219ba4af853ad17408b50147cfe}
+
+
+Return action range of the light. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+\hypertarget{classLight_ac9e3a10f4413cdd83325397e38cd2dbe}{\index{Light@{Light}!set\-Action\-Range@{set\-Action\-Range}}
+\index{set\-Action\-Range@{set\-Action\-Range}!Light@{Light}}
+\subsubsection[{set\-Action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-::set\-Action\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-Range}
+\end{DoxyParamCaption}
+)}}\label{classLight_ac9e3a10f4413cdd83325397e38cd2dbe}
+
+
+set light's action range through arguement. 
+
+\begin{DoxyAuthor}{Author}
+Zixiao Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Sensor\-Type} & Set \hyperlink{classLight}{Light}'s action range according to arguement new\-Range. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classLight_ada425b10c6d859e3348165267f19d752}{\index{Light@{Light}!action\-Range@{action\-Range}}
+\index{action\-Range@{action\-Range}!Light@{Light}}
+\subsubsection[{action\-Range}]{\setlength{\rightskip}{0pt plus 5cm}double Light\-::action\-Range\hspace{0.3cm}{\ttfamily [private]}}}\label{classLight_ada425b10c6d859e3348165267f19d752}
+The action range of light 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Light_8h}{Light.\-h}\item 
+\hyperlink{Light_8cpp}{Light.\-cpp}\end{DoxyCompactItemize}
