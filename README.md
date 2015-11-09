@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is an simple Robot Simulation which are intended to practising and implementing robot(AI). There are several versions in **project** directory in which robot are acting different ways interacting with obstacles and targets. In **src** directory, there is a newest version of robot simulation. In newest version, beside animation window there is a control panel which could control some attribute of obstacles, targets, robots and even whole project. If you want to try on other version, change name of **interationX** to **src**.  
+This is an simple Robot Simulation which are intended to practising and learning robot(AI) programming. There are several versions in **project** directory in which robot are acting different ways interacting with obstacles and targets. In **src** directory, there is a newest version of robot simulation. In newest version, beside animation window there is a control panel which could control some attribute of obstacles, targets, robots and even whole project. If you want to try on other version, change name of **interationX** to **src**.  
 
 ## Feature  
 1. Robots: purple; Obstacle: yellow  
